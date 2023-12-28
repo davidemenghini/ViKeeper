@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="988f5bcd-4208-4019-97a6-927571bbe3ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/app/src/main/java/it/davidemenghini/ViServer/Config/SpringConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/app/src/main/java/it/davidemenghini/ViServer/Model/EntityDao/HlsVideoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/app/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/app/src/main/java/it/davidemenghini/ViServer/Model/Controller/VideoStreamingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/app/src/main/java/it/davidemenghini/ViServer/Model/Service/VideoStreamingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app/app/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/app/src/main/java/it/davidemenghini/ViServer/Config/SpringConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/app/src/main/java/it/davidemenghini/ViServer/Config/SpringConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/app/src/main/java/it/davidemenghini/ViServer/Model/EntityDao/HlsVideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/app/src/main/java/it/davidemenghini/ViServer/Model/EntityPojo/VideoPathMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/app/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/app/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/server/app">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,23 +57,46 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ZzofSIdPMxoh0uPKa3Tg5PMv3w" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/progetti/ViKeeper",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/progetti/ViKeeper/server/app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;MySQL&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ViServer.app.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="it.davidemenghini.ViServer.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,7 +105,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703434371425</updated>
-      <workItem from="1703434372565" duration="108000" />
+      <workItem from="1703434372565" duration="481000" />
+      <workItem from="1703676102670" duration="556000" />
+      <workItem from="1703676678431" duration="182000" />
+      <workItem from="1703676880353" duration="595000" />
+      <workItem from="1703682083850" duration="7828000" />
+      <workItem from="1703756548710" duration="3846000" />
     </task>
     <servers />
   </component>
