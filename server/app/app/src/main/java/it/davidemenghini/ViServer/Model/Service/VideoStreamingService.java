@@ -8,18 +8,28 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
+import java.net.URI;
+import java.nio.file.Path;
+
 @Service
 public class VideoStreamingService {
-    private static final String path = "D:\\aaa.mp4";
+    private static final String FORMAT = "classpath:videos\\bbb.mp4";
 
     @Autowired
     private ResourceLoader resourceLoader;
 
-    private Logger logger = LoggerFactory.getLogger(VideoStreamingService.class);
+    private final Logger logger = LoggerFactory.getLogger(VideoStreamingService.class);
 
     public Mono<Resource> getVideo(){
-        logger.info("Ciaoooo");
+        try{
+            return Mono.fromSupplier(()->this.resourceLoader
+                    .getResource(FORMAT));
+        }catch (Exception e){
+            logger.error("ma esiste per davvero? "+this.resourceLoader.getResource(FORMAT).exists());
+            return Mono.empty();
+        }
 
-        return Mono.fromSupplier(()->this.resourceLoader.getResource(path));
+
+
     }
 }

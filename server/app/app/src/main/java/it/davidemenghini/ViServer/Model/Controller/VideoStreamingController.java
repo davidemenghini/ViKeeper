@@ -5,8 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
-import org.springframework.core.io.ResourceLoader;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,15 +15,23 @@ import reactor.core.publisher.Mono;
 public class VideoStreamingController {
 
 
+
     @Autowired
     private VideoStreamingService videoStreamingService;
-    private Logger logger = LoggerFactory.getLogger(VideoStreamingController.class);
+    private final Logger logger = LoggerFactory.getLogger(VideoStreamingController.class);
 
-    @GetMapping(path = "/api/video/getVideo", produces = MediaType.ALL_VALUE)
+    @GetMapping(value = "/api/video/getVideo", produces = "video/mp4")
     public Mono<Resource> getVideo(@RequestHeader(value = "Range") String range){
-        logger.error("range: "+ range);
+        logger.info("range: "+ range);
+        Mono<Resource> r = videoStreamingService.getVideo();
 
-        return videoStreamingService.getVideo();
+        if (!r.equals(Mono.empty())){
+            return r;
+        }else{
+            logger.error("errorerererer");
+            return Mono.empty();
+        }
+
 
     }
 

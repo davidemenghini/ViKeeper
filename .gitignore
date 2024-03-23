@@ -12,3 +12,8 @@ server/app/app/src/main/resources/application.yaml
 #ignoring spring configuration class. Into documentation will be added a sample
 #spring configuration class without any sensitive information.
 server/app/app/src/main/java/it/davidemenghini/ViServer/Config/SpringConfiguration.java
+
+
+#ignoring a test video for streaming
+server/app/app/src/main/resources/videos/*
+
