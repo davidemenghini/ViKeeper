@@ -39,12 +39,18 @@ dependencies {
     implementation("org.springframework.data:spring-data-jpa:3.2.1")
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly("org.projectlombok:lombok:1.18.30")
+    annotationProcessor("org.projectlombok:lombok:1.18.30")
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
     implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.2.1")
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-webflux
     implementation("org.springframework.boot:spring-boot-starter-webflux:3.2.1")
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     implementation("mysql:mysql-connector-java:8.0.33")
+    // https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter
+    testImplementation("org.mockito:mockito-junit-jupiter:5.11.0")
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.2.1")
+
 
 
 

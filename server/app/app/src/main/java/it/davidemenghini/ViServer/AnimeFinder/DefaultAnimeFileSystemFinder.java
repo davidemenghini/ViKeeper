@@ -71,7 +71,6 @@ public class DefaultAnimeFileSystemFinder implements FileVisitor<Path> {
                 .toString();
         String fullpath = file
                 .toString();
-        AnimeEpisode
         return FileVisitResult.TERMINATE;
     }
 
