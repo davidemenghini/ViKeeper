@@ -1,8 +1,7 @@
 package it.davidemenghini.ViServer.Model.Service;
 
-import it.davidemenghini.ViServer.AnimeFinder.AnimeSeries;
+import it.davidemenghini.ViServer.Model.EntityPojo.Series;
 import it.davidemenghini.ViServer.Model.Repository.AnimeSeriesRepo;
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +13,7 @@ public class AnimeService {
 
     //@Transactional
     public void addNewSeries(String name){
-        AnimeSeries animeSeries = new AnimeSeries();
+        Series animeSeries = new Series();
         animeSeries.setName(name);
         try{
             this.animeSeriesRepo.save(animeSeries);

@@ -8,7 +8,6 @@ public class AnimeController {
 
     @PostMapping("/add")
     public @ResponseBody Boolean addNewAnime(@RequestParam String name){
-        
         return Boolean.FALSE;
     }
 

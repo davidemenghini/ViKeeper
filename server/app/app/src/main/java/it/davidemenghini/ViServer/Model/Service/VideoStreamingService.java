@@ -3,13 +3,8 @@ package it.davidemenghini.ViServer.Model.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
-import reactor.core.publisher.Mono;
-
-import java.net.URI;
-import java.nio.file.Path;
 
 @Service
 public class VideoStreamingService {
@@ -19,7 +14,7 @@ public class VideoStreamingService {
     private ResourceLoader resourceLoader;
 
     private final Logger logger = LoggerFactory.getLogger(VideoStreamingService.class);
-
+/*
     public Mono<Resource> getVideo(){
         try{
             return Mono.fromSupplier(()->this.resourceLoader
@@ -31,5 +26,5 @@ public class VideoStreamingService {
 
 
 
-    }
+    }*/
 }
