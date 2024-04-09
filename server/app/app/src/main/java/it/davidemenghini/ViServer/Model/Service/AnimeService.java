@@ -5,7 +5,11 @@ import it.davidemenghini.ViServer.Model.Repository.AnimeSeriesRepo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 @Service
@@ -37,6 +41,18 @@ public class AnimeService {
     public Boolean addNewSeries(Series series){
         System.out.println(series.toString());
         return this.execAddNewSeries(series);
+    }
+
+    public List<Series> getSeriesByName(String name,int pageNumber, int pageSize){
+        Pageable p = Pageable
+                .ofSize(pageSize)
+                .withPage(pageNumber);
+        Page<Series> i = this.animeSeriesRepo.findByNameContaining(p,name);
+        return i.stream().toList();
+    }
+
+    public long getSeriesCount(){
+        return this.animeSeriesRepo.count();
     }
 
 }

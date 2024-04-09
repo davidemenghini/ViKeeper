@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -31,5 +32,23 @@ public class AnimeController {
         this.logger.info(s.toString());
         return new ResponseEntity<>(animeService.addNewSeries(s), HttpStatus.OK);
     }
+
+    @GetMapping("/count")
+    public ResponseEntity<Long> getSeriesCount(){
+        return new ResponseEntity<>(animeService.getSeriesCount(),HttpStatus.OK);
+    }
+
+    @PostMapping("/find")
+    public ResponseEntity<List<Series>> findAllSeriesByName(@RequestBody String containing,@RequestBody int pageNumber, @RequestBody int pageSize){
+        if(((long) pageNumber * pageSize) >= this.animeService.getSeriesCount()){
+            return new ResponseEntity<>(List.of(),HttpStatus.BAD_GATEWAY);
+        }
+        List<Series> series = this.animeService.getSeriesByName(containing,pageNumber, pageSize);
+        return new ResponseEntity<>(series,HttpStatus.OK);
+    }
+
+    
+
+
 
 }
