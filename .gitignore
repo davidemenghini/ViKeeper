@@ -1,6 +1,6 @@
 
 # ignoring aplication propierties yaml file
-server/app/app/src/main/resources/application.yaml
+server/app/app/src/main/resources/application.properties
 
 
 
